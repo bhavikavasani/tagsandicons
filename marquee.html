@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example of marquee tag</title>
+    </head>
+    <body>
+        <!-- attribute of marquee tag (behavior, direction, hspace, vspace,scrollamount,scrolldelay, height,width,bgcolor,loop)-->
+
+        <!-- simple from right to left -->
+        <marquee behavior="alternate" direction="left">This text will scroll from right to left</marquee>
+
+        <!-- Scrolling Down text -->
+        <marquee direction="down" height="100" width="200" bgcolor="pink">this text scrolling down</marquee>
+
+        <!-- onmouseover and onmouseout -->
+        <marquee behavior="scroll" direction="left" bgcolor="yellow" onmouseover="this.stop();" onmouseout="this.start();">Hover the mouse and hold and out the mouse marquee will start</marquee>
+        <br>
+        <br>
+        <br>
+        <!-- marquee animation using buttons -->
+        <marquee behavior="scroll" direction="left" id="marquee1">Press button</marquee>
+        <input type="button" value="stop marquee" onclick="document.getElementById('marquee1').stop();"/>
+        <input type="button" value="start marquee" onclick="document.getElementById('marquee1').start()"/>
+
+
+    </body>
+</html>
